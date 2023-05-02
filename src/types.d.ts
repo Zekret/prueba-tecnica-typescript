@@ -2,7 +2,7 @@ declare global {
   interface Array<T> {
     toSorted(compareFn?: (a: T, b: T) => number): T[]
   }
-}
+} // Esto se agrega dado que TypeScript no soporta la funcion toSorted para filtrar
 
 export interface APIResults {
   results: User[]
